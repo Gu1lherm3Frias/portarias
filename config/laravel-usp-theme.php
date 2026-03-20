@@ -3,19 +3,14 @@
 $portarias = [
     [
         'text' => 'Criar',
-        'url' => 'subitem1',
-    ],
-    [
-        'text' => 'Listar',
-        'url' => 'subitem2',
-        'can' => 'admin',
+        'url' => 'create',
     ],
 ];
 
 $menu = [
     [
         'text' => '<i class="fas fa-home"></i> Home',
-        'url' => 'home',
+        'url' => '/',
     ],
     [
         # este item de menu será substituido no momento da renderização

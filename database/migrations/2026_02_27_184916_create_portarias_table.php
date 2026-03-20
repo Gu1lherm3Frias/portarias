@@ -25,7 +25,7 @@ return new class extends Migration
                 'approved',
                 'rejected',
             ])->default('draft');
-            $table->timestamp('published_at');
+            $table->timestamp('published_at')->nullable();
             $table->foreignId("created_by")->constrained('users');
             $table->foreignId("approved_by")->nullable()->constrained('users');
             #foreign keys with table user
